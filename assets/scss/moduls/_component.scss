@@ -1,0 +1,82 @@
+//header
+header{
+  position:fixed;
+  box-shadow: 2px 2px 4px rgba(138, 137, 137, 0.548);
+  z-index: 99;
+  background-color:#fff;
+  width: 100%;
+  .linea{
+    border-bottom: 1px solid #c9c9c9;
+  }
+}
+//content
+.caption-center{
+  margin: 4em 0;
+  span{
+    color: $color_primary;
+  }
+  p{
+    width: 90%;
+    margin: 0 auto;
+    line-height: 27px;
+    @include mediaQ(992px){
+      width: 60%;
+      
+    }
+  }
+}
+
+//grid-valores
+.values{
+  &-item{
+    width:90%;
+    margin: 0 auto;
+    margin-bottom: 1.5em;
+    @include mediaQ(769px){
+      width: 30%;
+      margin-left: 0;
+      margin-right: 0;
+      
+    }
+    @include mediaQ(992px){
+      width: 21%;
+      
+    }
+  }
+  &-title{
+    color: $color_primary;
+    font-size: 16px;
+  }
+  &-details{
+    font-size: 14px;
+  }
+}
+//footer
+.b-footer{
+  text-align: center;
+  font-size:12px;
+  color: #9f9f9f;
+
+  p{
+    margin-bottom: 0.1em;
+  }
+}
+
+//lista de link
+.list-links{
+  color: #666;
+  font-size:13px;
+  margin-bottom:2.5em;
+  @include mediaQ(769px){
+    padding: 0;
+    
+  }
+  &-title{
+    color:$color_primary;
+    font-size:15px
+  }
+  li{
+    margin-bottom: 3px;
+    cursor: pointer;
+  }
+}

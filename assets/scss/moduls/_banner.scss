@@ -1,0 +1,36 @@
+//banner title
+.banner{
+    background-image: url("../img/fondo.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    margin-top:42px;
+    @include mediaQ(769px){
+      margin-top:84px;
+     }
+    .container{
+      height: 481px;
+    }
+}
+
+.banner-subtitle{
+ margin: 0;
+ font-size:20px;
+ color:$color_primary;
+ line-height:1.2;
+ span{
+   color: $color_secondary;
+ }
+}
+.banner-title{
+    color: #fff;
+    // line-height: 1.3;
+    font-size: 32px;
+    text-align: center;
+    @include mediaQ(769px){
+     text-align: left;
+      
+    }
+  }
